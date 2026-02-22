@@ -387,7 +387,6 @@ footer{
     <button class="nav-btn" onclick="document.getElementById('news').scrollIntoView({behavior:'smooth'})">News</button>
     <button class="nav-btn" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">Calculator</button>
     <button class="nav-btn" onclick="document.getElementById('charts').scrollIntoView({behavior:'smooth'})">Charts</button>
-    <a class="nav-btn" href="arx-prop-comparison.html">Prop Firms ↗</a>
     <a class="nav-btn" href="https://www.arxpricetime.com" style="border-color:rgba(124,58,237,0.3);color:rgba(238,232,255,0.7)">← Back to ARX</a>
   </nav>
   <div class="header-time" id="liveTime">--:-- UTC</div>
@@ -400,7 +399,7 @@ footer{
       <div class="hero-tag">Market Preparation Hub</div>
       <h1 class="hero-h1">Prepare to<br><em>Enter the Market</em></h1>
       <p class="hero-sub">
-        Everything you need before placing a trade — economic calendar,
+        Everything you need before placing a trade economic calendar,
         risk calculator, live charts and market screeners. One page. Zero excuses.
       </p>
     </div>
@@ -796,7 +795,7 @@ footer{
    ══════════════════════════════════════════════════════════ */
 var NEWS_EVENTS = [
   {
-    name: "NFP — Non-Farm Payrolls",
+    name: "NFP Non-Farm Payrolls",
     short: "US Jobs Report",
     impact: "high",
     currency: "us",
@@ -807,18 +806,18 @@ var NEWS_EVENTS = [
     tip: "<strong>Strategy:</strong> Avoid being in a trade 15 minutes before and during the release. Wait for the initial spike to settle (5–15 min), then look for a retest of a key level with structure. The second move is often more reliable than the initial spike."
   },
   {
-    name: "CPI — Consumer Price Index",
+    name: "CPI Consumer Price Index",
     short: "Inflation Data",
     impact: "high",
     currency: "us",
     flag: "🇺🇸",
-    freq: "Monthly — mid-month",
+    freq: "Monthly  mid-month",
     pairs: ["EUR/USD","GBP/USD","USD/JPY","XAU/USD"],
     desc: "Measures the change in prices paid by consumers for goods and services. CPI is the Fed's primary inflation gauge. Higher than expected CPI = interest rates stay high = USD bullish. Lower CPI = rate cuts coming = USD bearish. Gold (XAU) moves inversely to rate expectations.",
-    tip: "<strong>Strategy:</strong> Watch the Core CPI (excludes food and energy) — it's what the Fed focuses on. A beat on Core CPI is more powerful than headline CPI. Expect sharp, sustained moves rather than a spike-and-reverse."
+    tip: "<strong>Strategy:</strong> Watch the Core CPI (excludes food and energy) it's what the Fed focuses on. A beat on Core CPI is more powerful than headline CPI. Expect sharp, sustained moves rather than a spike-and-reverse."
   },
   {
-    name: "FOMC — Fed Interest Rate Decision",
+    name: "FOMC Fed Interest Rate Decision",
     short: "Federal Reserve Meeting",
     impact: "high",
     currency: "us",
@@ -826,17 +825,17 @@ var NEWS_EVENTS = [
     freq: "8 times per year",
     pairs: ["EUR/USD","GBP/USD","USD/JPY","XAU/USD","All USD pairs"],
     desc: "The Federal Open Market Committee sets US interest rates. This is the single most market-moving event of any given month. Even if the rate stays unchanged, the accompanying statement and press conference (30 min later) drive massive volatility. Every word of the statement is analysed.",
-    tip: "<strong>Strategy:</strong> Stay flat going into FOMC unless you're an experienced news trader. The real opportunity is in the press conference — Powell's tone (hawkish vs dovish) often reverses the initial spike. Wider spreads and slippage are common — reduce position sizes if trading."
+    tip: "<strong>Strategy:</strong> Stay flat going into FOMC unless you're an experienced news trader. The real opportunity is in the press conference Powell's tone (hawkish vs dovish) often reverses the initial spike. Wider spreads and slippage are common — reduce position sizes if trading."
   },
   {
-    name: "GDP — Gross Domestic Product",
+    name: "GDP Gross Domestic Product",
     short: "Economic Growth",
     impact: "high",
     currency: "us",
     flag: "🇺🇸",
     freq: "Quarterly (3 releases per quarter)",
     pairs: ["EUR/USD","GBP/USD","USD/JPY"],
-    desc: "GDP measures the total value of all goods and services produced in the US. The Advance estimate (first release) has the most impact. A strong GDP = healthy economy = USD positive. However, context matters — GDP can be strong but still signal stagflation if paired with high inflation.",
+    desc: "GDP measures the total value of all goods and services produced in the US. The Advance estimate (first release) has the most impact. A strong GDP = healthy economy = USD positive. However, context matters GDP can be strong but still signal stagflation if paired with high inflation.",
     tip: "<strong>Strategy:</strong> GDP rarely causes the same violent spikes as NFP or FOMC, but it confirms the broader macro narrative. Use it to align with the larger trend rather than as a scalping opportunity."
   },
   {
@@ -847,7 +846,7 @@ var NEWS_EVENTS = [
     flag: "🇪🇺",
     freq: "8 times per year",
     pairs: ["EUR/USD","EUR/GBP","EUR/JPY"],
-    desc: "The ECB sets interest rates for the Eurozone. Similar to FOMC but for EUR. The press conference with Christine Lagarde is critical — her tone on future rate paths (hawkish or dovish) moves EUR significantly. EUR/USD can move 80–120 pips on a hawkish/dovish shift.",
+    desc: "The ECB sets interest rates for the Eurozone. Similar to FOMC but for EUR. The press conference with Christine Lagarde is critical her tone on future rate paths (hawkish or dovish) moves EUR significantly. EUR/USD can move 80–120 pips on a hawkish/dovish shift.",
     tip: "<strong>Strategy:</strong> Watch the EUR/USD reaction to the statement release first. If it spikes up then reverses, that's a distribution signal. The press conference 45 minutes later often creates a second, cleaner directional move."
   },
   {
@@ -859,7 +858,7 @@ var NEWS_EVENTS = [
     freq: "8 times per year",
     pairs: ["GBP/USD","EUR/GBP","GBP/JPY"],
     desc: "The Bank of England sets UK interest rates and publishes the Monetary Policy Summary. GBP pairs are directly affected. The vote split (how many MPC members voted for/against) is often more important than the decision itself.",
-    tip: "<strong>Strategy:</strong> GBP/USD and GBP/JPY are the primary pairs to watch. GBP/JPY tends to have larger pip moves. Check the vote count — a unanimous decision has less surprise potential than a split vote."
+    tip: "<strong>Strategy:</strong> GBP/USD and GBP/JPY are the primary pairs to watch. GBP/JPY tends to have larger pip moves. Check the vote count a unanimous decision has less surprise potential than a split vote."
   },
   {
     name: "ISM Manufacturing / Services",
@@ -867,7 +866,7 @@ var NEWS_EVENTS = [
     impact: "medium",
     currency: "us",
     flag: "🇺🇸",
-    freq: "Monthly — first week",
+    freq: "Monthly first week",
     pairs: ["EUR/USD","USD/JPY"],
     desc: "The ISM PMI surveys business purchasing managers about new orders, production, employment, and prices. A reading above 50 = expansion (USD positive). Below 50 = contraction. Services ISM has more impact than Manufacturing since services dominate the US economy.",
     tip: "<strong>Strategy:</strong> ISM creates 20–50 pip moves on average. More useful as confirmation of trend direction than as a standalone trade. Combine with daily/weekly levels for best entries."
@@ -878,7 +877,7 @@ var NEWS_EVENTS = [
     impact: "medium",
     currency: "us",
     flag: "🇺🇸",
-    freq: "Monthly — Wednesday before NFP",
+    freq: "Monthly Wednesday before NFP",
     pairs: ["EUR/USD","GBP/USD"],
     desc: "ADP releases private payroll data 2 days before NFP. Historically seen as a preview of NFP, though the correlation is imperfect. Markets often react to a surprise ADP print then partially reverse once NFP is released.",
     tip: "<strong>Strategy:</strong> Don't over-trade ADP. If it prints very different from expectations, expect a 20–40 pip initial move that often fades. The real test is always NFP on Friday."
@@ -889,7 +888,7 @@ var NEWS_EVENTS = [
     impact: "medium",
     currency: "us",
     flag: "🇺🇸",
-    freq: "Monthly — mid-month",
+    freq: "Monthly mid-month",
     pairs: ["EUR/USD","USD/JPY"],
     desc: "Measures the total value of sales at the retail level. Strong Retail Sales = consumers spending = economic health = USD positive. Core Retail Sales (excludes autos) is the more watched number since auto sales are volatile.",
     tip: "<strong>Strategy:</strong> A beat on Core Retail Sales in an environment where rate hikes are being discussed is particularly USD bullish. A miss when the market fears recession is USD bearish and amplified."
